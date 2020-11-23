@@ -145,11 +145,140 @@
 
 // 'Do While' Loop
 
-let i = 0
-do{
-    i++;
-    if(i===5) continue;
-    console.log(i);
-}
-while (i< 10);
+// let i = 0
+// do{
+//     i++;
+//     if(i===5) continue;
+//     console.log(i);
+// }
+// while (i< 10);
+
+
+
+// FizzBuzz
+
+// for (var i=1; i <= 20; i++)
+// {
+//     if (i % 15 == 0)
+//         console.log("FizzBuzz");
+//     else if (i % 3 == 0)
+//         console.log("Fizz");
+//     else if (i % 5 == 0)
+//         console.log("Buzz");
+//     else
+//         console.log(i);
+// }
+
+
+
+
+
+
+// --------------------------------//
+// DATA FUNCTIONS//
+//----------------------------------//
+
+
+
+//----ARROW FUNCTIONS----//
+
+
+
+
+//-- 1. BASIC FUNCTION-- //
+
+// function sum(a,b){
+//     return a+b;
+// }
+// var results = sum (10,2);
+// console.log(results);
+
+
+
+
+// --- 2. FUNCTION EXPRESSION--//
+
+// var sum = function sum (a,b){
+//     return a+b;
+// }
+// var results = sum(5,2);
+// console.log(results);
+
+
+// ---3. ARROW FUNCTION--//
+
+// var sum = (a,b) => a+b;
+// var results = sum(4,5);
+// console.log(results);
+
+
+// ---4. ARROW MULTILINE--//
+
+// var sum = (a,b) =>{
+//     console.log("Adding Two Numbers");
+//     return a+b;
+// };
+
+
+// var results = sum(6,5);
+// console.log(results);
+
+
+
+
+
+
+// ---- MAP ---//
+
+// ----- 1. BASIC MAP ----//
+
+// var data = [1,2,3,4,5];
+// var dataCopy = data.map(function(item){
+//     return item;
+// });
+
+// console.log(dataCopy);
+
+
+
+
+
+// ----- 2. MAP WITH ARROW ---//
+
+// var data = [1,2,3,4.5];
+// var dataCopy = data.map(item => item);
+// console.log(dataCopy);
+
+
+
+// -----3. MAP WITH ARRAY OF OBJECTS ---//
+
+// var data = [{x:1, y:1}, {x:2, y:3}, {x:3, y:5}];
+// var xData = data.map(obj => obj.x);
+// var yData = data.map(obj => obj.y);
+
+// console.log(xData);
+// console.log(yData);
+
+
+function sockMerchant(n, ar) {
+    let socks = {};
+    let pairs = 0;
+  for (let element of ar) {
+    socks[element] = socks[element] + 1 || 1;
+      if (socks[element] % 2 === 0) {
+        pairs += 1;
+      }
+    }
+  return pairs;
+  }
+  
+var sorter = sockMerchant(7,[1,2,1,2,1,3,2]);
+console.log(sorter);
+
+
+
+
+
+
 
