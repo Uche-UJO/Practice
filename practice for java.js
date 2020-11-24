@@ -74,14 +74,14 @@
 
 // for Loop
 
-//for (let i = 0; i<5; i++) {
+// for (let i = 0; i<5; i++) {
 //    console.log('Beetle')
-//}
+// }
 
 
-//for (let i = 0; i<5; i++) {
+// for (let i = 0; i<5; i++) {
 //    console.log('Beetle' + i)
-//}
+// }
 
 
 //for (let i = 5; i>0; i--) {
@@ -260,24 +260,144 @@
 // console.log(xData);
 // console.log(yData);
 
+// --------PRACTICE---///
 
-function sockMerchant(n, ar) {
-    let socks = {};
-    let pairs = 0;
-  for (let element of ar) {
-    socks[element] = socks[element] + 1 || 1;
-      if (socks[element] % 2 === 0) {
-        pairs += 1;
-      }
-    }
-  return pairs;
-  }
+// function sockMerchant(n, ar) {
+//     let socks = {};
+//     let pairs = 0;
+//   for (let element of ar) {
+//     socks[element] = socks[element] + 1 || 1;
+//       if (socks[element] % 2 === 0) {
+//         pairs += 1;
+//       }
+//     }
+//   return pairs;
+//   }
   
-var sorter = sockMerchant(7,[1,2,1,2,1,3,2]);
-console.log(sorter);
+// var sorter = sockMerchant(7,[1,2,1,2,1,3,2]);
+// console.log(sorter);
 
 
 
+
+
+// -------------- FILTER -----------------//
+
+// BASIC FILTER
+
+
+// var data = [1,2,3,4,5];
+// var filteredData = data.filter(function(item) {
+//     return item < 3;
+// });
+
+// console.log(filteredData);
+
+
+
+// ---FILTER WITH ARROW FUNCTION ---//
+
+
+
+// var data = [1,2,3,4,5];
+// var filteredData = data.filter(item => item < 3);
+// console.log(filteredData);
+
+
+
+// ---  FILTER BY OBJECT VALUE --//
+
+// var data = [{x:1, y:1}, {x:2, y:3}, {x:3, y:5}];
+// var xFiltered = data.filter(obj => obj.x < 3);
+// console.log(xFiltered);
+
+
+
+// ---- TO PRINT ODD NUMBERS BETWEEN 1 AND 100----//
+// let i = 0
+// do {
+//     i++;
+//     if (i % 2=== 0) continue;
+//     console.log(i);
+
+// }
+// while (i< 100);
+
+
+// *************** DON'T DO THIS******************//
+// **********************************************//
+// for (let i = 0; 1 >= i <= 100; i++){
+//     console.log(i);
+// }
+// *******************************************//
+// *****************************************//
+
+
+// ----------TO PRINT INTEGERS 1-100 --- //
+
+// let i = 1;
+// while (i <= 100){
+//     console.log(i);
+//     i++;
+// }
+
+
+// ---- TO PRINT EVEN NUMBERS BETWEEN 1 AND 100----//
+// let i = 0
+// do {
+//     i++;
+//     if (i % 2!= 0) continue;
+//     console.log(i);
+
+// }
+// while (i< 100);
+
+
+
+
+// ---- All numbers between 1-100, divisible by 3 ----//
+
+// let i = 0
+// do {
+//     i++;
+//     if (i % 3!= 0) continue;
+//     console.log(i);
+
+// }
+// while (i< 100);
+
+
+
+
+// ------------- All numbers between 1-100, divisible by three and five ----//
+
+// let i = 0
+// do {
+//     i++;
+//     if (i % 3!= 0 && i % 5!= 0) continue;
+//     console.log(i);
+
+// }
+// while (i< 100);
+
+
+
+
+
+// --------- Write a public method that takes in a string s and returns the length as an integer s.length ----//
+
+// var Str = "just me";
+// console.log("string length is: " + Str.length);
+
+
+
+
+
+
+// -------------- Write a public method that takes in string s and returns the first character s.charAt(0) -------//
+
+// var Str = "just me";
+// console.log("first character is: " + Str.charAt(0));
 
 
 
