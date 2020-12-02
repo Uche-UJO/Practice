@@ -129,25 +129,131 @@
 
 // Arrays of Objects
 
-const todos = [
-    {
-        id: 1,
-        text: 'Take out trash',
-        isCompleted: true
-    },
-    {
-        id: 2,
-        text: 'Meeting with Boss',
-        isCompleted: true
-    },
-    {
-        id: 3,
-        text: 'Dentist Appointment',
-        isCompleted: false
-    }
+// const todos = [
+//     {
+//         id: 1,
+//         text: 'Take out trash',
+//         isCompleted: true
+//     },
+//     {
+//         id: 2,
+//         text: 'Meeting with Boss',
+//         isCompleted: true
+//     },
+//     {
+//         id: 3,
+//         text: 'Dentist Appointment',
+//         isCompleted: false
+//     }
 
-];
+// ];
 
-console.log(todos);
+// console.log(todos);
+// console.log(todos[1].text);
 
-console.log(todos[1].text);
+
+//  to convert the above to json
+
+// const todoJSON = JSON.stringify(todos);
+// console.log(todoJSON);
+
+
+
+// FOR LOOPS
+
+// const todos = [
+//     {
+//         id: 1,
+//         text: 'Take out trash',
+//         isCompleted: true
+//     },
+//     {
+//         id: 2,
+//         text: 'Meeting with Boss',
+//         isCompleted: true
+//     },
+//     {
+//         id: 3,
+//         text: 'Dentist Appointment',
+//         isCompleted: false
+//     }
+
+// ];
+
+
+// for(let i = 0; i < 10; i++) {
+//     console.log(i);
+//     console.log(`for loop number: ${i}`);
+
+// }
+
+// While Loop
+
+// let i = 0;
+// while(i < 10) {
+//     console.log(`While Loop Number: ${i}`);
+//     i++;
+// }
+
+// ------------------------------//
+
+// for(let i = 0; i < todos.length; i++) {
+//     console.log(todos[i].text);
+// }
+
+// OR //
+
+// you can use another term below other than todo //
+// for(let todo of todos) {
+//     console.log(todo.text);
+// }
+
+// ---------------------------------------//
+
+
+
+//  forEach, map, filter
+
+// todos.forEach(function(todo){
+//     console.log(todo.text);
+// });
+
+// ---------------------------------//
+
+// const todoText = todos.map(function(todo){
+//     return todo.text;
+// });
+// console.log(todoText);
+
+// ----------------------------------//
+
+
+// const todoCompleted = todos.filter(function(todo){
+//     return todo.isCompleted === true;
+// });
+// console.log(todoCompleted);
+
+
+// --------------------------------------//
+
+
+// const todoCompleted = todos.filter(function(todo){
+//     return todo.isCompleted === true;
+// }).map(function(todo){
+//     return todo.text;
+// })
+// console.log(todoCompleted);
+
+
+// ------------------------------------------ //
+
+
+
+// Conditionals
+
+const x = 10;
+
+if(x == 10){
+    console.log(`x is 10`);
+
+}
